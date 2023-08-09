@@ -1,0 +1,14 @@
+.home-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-message {
+    font-size: 14px;
+}
+
+.home-image img {
+    width: 200px;
+}
