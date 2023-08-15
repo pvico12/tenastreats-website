@@ -2,6 +2,7 @@
 module.exports = {
   content: {
     files: [
+    "./src/index.html",
     "./src/app/**/*.{html,ts}",
     "./src/app/home/**/*.{html,ts}",
     "./src/app/contact/**/*.{html,ts}",
