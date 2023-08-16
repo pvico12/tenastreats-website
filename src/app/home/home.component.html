@@ -1,4 +1,4 @@
-<div id="welcome-container" class="flex justify-center gap-3 pb-12 px-4">
+<div id="welcome-container" class="flex justify-center gap-3 px-4">
     <div class="flex flex-col">
         <div class="text-4xl pb-5">
             Welcome to Tena's Treats
@@ -8,11 +8,13 @@
             made by Andrea Vukoje
         </div>
     </div>
-    <img class="w-32" src="../../assets/cakes/jackDaniels.jpg" alt="Jack Daniels Cake">
+    <div class="max-w-[250px]">
+        <img class="w-screen" src="../../assets/cakes/jackDaniels.jpg" alt="Jack Daniels Cake">
+    </div>
 </div>
 
 
-<div id="about-container" class="flex flex-col items-center gap-10 pb-20">
+<div id="about-container" class="flex flex-col items-center gap-5 pb-10">
     <div class="flex flex-col px-5">
         <div class="text-3xl text-center pb-5">
             ABOUT US
@@ -26,11 +28,33 @@
             Also, you can send me a DM on instagram @tenas.treats.
         </div>
     </div>
-    <div class="flex gap-3">
+    <div class="flex">
         <a href="https://instagram.com/tenas.treats" target="_blank">
             <img class="w-20" src="../../assets/instagramLogo.png" alt="Instagram Logo">
         </a>
     </div>
+</div>
+
+<div id="menu-container" class="flex flex-col items-center gap-3 pb-10 px-5">
+    <div id="menu-options" class="flex justify-center gap-3 pb-2">
+        <div class="flex flex-col gap-2 max-w-md">
+            <img class="w-screen" src="../../assets/cakes/pinkCakeWhiteStrawberries.jpg" alt="Instagram Logo">
+            <p class="text-center">Cakes</p>
+        </div>
+        <div class="flex flex-col gap-2 max-w-md">
+            <img class="w-screen" src="../../assets/cakes/trailerParkBoys.jpg" alt="Instagram Logo">
+            <p class="text-center">Cupcakes</p>
+        </div>
+        <div class="flex flex-col gap-2 max-w-md">
+            <img class="w-screen" src="../../assets/cakes/bunnySugarCookies.jpg" alt="Instagram Logo">
+            <p class="text-center">Cookies</p>
+        </div>
+    </div>
+
+    <div>
+        <a routerLink="/pricing" class="background bg-pink-300 px-4 py-2 rounded-3xl">SEE MENU</a>
+    </div>
+    
 </div>
 
 
@@ -40,21 +64,21 @@
         Customized to perfection
     </div>
 
-    <div class="flex lg:flex-row flex-col">
+    <div class="flex lg:flex-row flex-col gap-2 px-4">
         <div class="flex gap-2 max-w-xl">
             <div>
-                <img class="p-5 w-screen" src="../../assets/cakes/jackDaniels.jpg" alt="Jack Daniels Cake">
+                <img class="w-screen" src="../../assets/cakes/jackDaniels.jpg" alt="Jack Daniels Cake">
             </div>
             <div>
-                <img class="p-5 w-screen" src="../../assets/cakes/trailerParkBoys.jpg" alt="Trailer Park Boys Cake">
+                <img class="w-screen" src="../../assets/cakes/trailerParkBoys.jpg" alt="Trailer Park Boys Cake">
             </div>
         </div>
         <div class="flex gap-2 max-w-xl">
             <div>
-                <img class="p-5 w-screen" src="../../assets/cakes/mrkicBabyShower.jpg" alt="Baby Shower Cake">
+                <img class="w-screen" src="../../assets/cakes/mrkicBabyShower.jpg" alt="Baby Shower Cake">
             </div>
             <div>
-                <img class="p-5 w-screen" src="../../assets/cakes/bunnySugarCookies.jpg" alt="Bunny Sugar Cookies">
+                <img class="w-screen" src="../../assets/cakes/bunnySugarCookies.jpg" alt="Bunny Sugar Cookies">
             </div>
         </div>
     </div>
