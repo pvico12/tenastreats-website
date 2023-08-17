@@ -16,7 +16,7 @@ const routes: Routes = [
     component: GalleryComponent
   },
   {
-    path: "pricing",
+    path: "menu",
     component: PricingComponent
   },
   {
