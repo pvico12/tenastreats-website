@@ -4,7 +4,6 @@ import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { OrderComponent } from './order/order.component';
-import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {
@@ -22,10 +21,6 @@ const routes: Routes = [
   {
     path: "order",
     component: OrderComponent
-  },
-  {
-    path: "contact",
-    component: ContactComponent
   },
 ];
 

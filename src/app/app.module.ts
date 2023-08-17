@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { OrderComponent } from './order/order.component';
-import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { MatIconModule } from '@angular/material/icon';
 
@@ -16,7 +15,6 @@ import { MatIconModule } from '@angular/material/icon';
     GalleryComponent,
     PricingComponent,
     OrderComponent,
-    ContactComponent,
     HomeComponent
   ],
   imports: [
