@@ -7,4 +7,27 @@ import { Component } from '@angular/core';
 })
 export class OrderComponent {
 
+  name: string="";
+  email: string="";
+  number: string="";
+  message: string="";
+
+  constructor() {
+  }
+
+  ngOnInit() {
+
+  }
+
+  getEmail() {
+    console.log(name)
+    return "mailto:petarvico3@outlook.com?" + 
+    "subject=Cake Order" +
+    "&body=" + 
+    "Name: " + encodeURIComponent(this.name) + "%0A" +
+    "Email: " + encodeURIComponent(this.email) + "%0A" +
+    "Phone Number: " + encodeURIComponent(this.number) + "%0A" +
+    "Message: %0A" + encodeURIComponent(this.message) + "%0A%0A%0A" +
+    "PLEASE UPLOAD 3-4 MOTIVATIONAL IMAGES OF YOUR CUSTOM CAKE"
+  }
 }
