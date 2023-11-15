@@ -21,8 +21,8 @@ export class OrderComponent {
 
   getEmail() {
     console.log(name)
-    return "mailto:tenastreats@gmail.com&" + 
-    "subject=Cake Order" +
+    return "mailto:tenastreats@gmail.com?" + 
+    "subject=Cake Order Request" +
     "&body=" + 
     "Name: " + encodeURIComponent(this.name) + "%0A" +
     "Email: " + encodeURIComponent(this.email) + "%0A" +
