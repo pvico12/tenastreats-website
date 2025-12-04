@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "",
+            "baseHref": "/",
             "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -28,7 +28,8 @@
             "inlineStyleLanguage": "css",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/CNAME"
             ],
             "styles": [
               "src/styles.css"
