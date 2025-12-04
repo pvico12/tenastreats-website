@@ -21,5 +21,11 @@
 
 /* Smooth scroll offset for fixed nav */
 section[id] {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 96px;
+}
+
+@media (min-width: 768px) {
+  section[id] {
+    scroll-margin-top: 80px;
+  }
 }
