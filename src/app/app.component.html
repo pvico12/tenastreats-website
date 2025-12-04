@@ -1,8 +1,79 @@
-<nav id-="navigation-bar" class="flex justify-center gap-3 my-5 py-2">
-  <a routerLink="/">HOME</a>
-  <a routerLink="/gallery">GALLERY</a>
-  <a routerLink="/menu">MENU</a>
-  <a routerLink="/order">ORDER</a>
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" [class.nav-scrolled]="isScrolled">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="#home" class="flex items-center gap-3 group">
+      <img src="assets/tenasTreatsLogo.jpg" alt="Tena's Treats Logo" class="w-12 h-12 rounded-full shadow-md group-hover:scale-110 transition-transform">
+      <span class="font-serif text-xl font-semibold text-gray-700 hidden sm:block">Tena's Treats</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#contact" class="btn-primary text-sm py-2 px-5">Order Now</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button (click)="toggleMenu()" class="md:hidden p-2 rounded-lg hover:bg-pink-100 transition-colors">
+      <svg *ngIf="!menuOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <svg *ngIf="menuOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div *ngIf="menuOpen" class="md:hidden bg-white/95 backdrop-blur-lg border-t border-pink-100">
+    <div class="flex flex-col items-center gap-4 py-6">
+      <a href="#home" (click)="closeMenu()" class="nav-link-mobile">Home</a>
+      <a href="#about" (click)="closeMenu()" class="nav-link-mobile">About</a>
+      <a href="#gallery" (click)="closeMenu()" class="nav-link-mobile">Gallery</a>
+      <a href="#contact" (click)="closeMenu()" class="btn-primary text-sm py-2 px-6">Order Now</a>
+    </div>
+  </div>
 </nav>
 
-<router-outlet></router-outlet>
+<!-- Main Content -->
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gradient-to-br from-pink-50 to-pink-100 py-12">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+      <!-- Logo & Tagline -->
+      <div class="text-center md:text-left">
+        <h3 class="font-serif text-2xl font-semibold text-gray-700 mb-2">Tena's Treats</h3>
+        <p class="text-gray-500">Sweetness crafted with love</p>
+      </div>
+
+      <!-- Social Links -->
+      <div class="flex items-center gap-4">
+        <a href="https://instagram.com/tenas.treats" target="_blank" class="group flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-pink-500 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+          <span class="text-gray-600 font-medium">@tenas.treats</span>
+        </a>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="flex gap-6 text-sm">
+        <a href="#home" class="text-gray-500 hover:text-pink-500 transition-colors">Home</a>
+        <a href="#about" class="text-gray-500 hover:text-pink-500 transition-colors">About</a>
+        <a href="#gallery" class="text-gray-500 hover:text-pink-500 transition-colors">Gallery</a>
+        <a href="#contact" class="text-gray-500 hover:text-pink-500 transition-colors">Contact</a>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="mt-8 pt-6 border-t border-pink-200 text-center">
+      <p class="text-gray-400 text-sm">&copy; 2024 Tena's Treats. Made with love in Canada.</p>
+    </div>
+  </div>
+</footer>

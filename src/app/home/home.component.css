@@ -1,3 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Home component specific styles */
+
+/* Hero section adjustments */
+#home {
+  background: linear-gradient(135deg, #fdf8f5 0%, #fce4ec 50%, #fdf8f5 100%);
+}
+
+/* Font serif for headings */
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Gallery grid aspect ratios */
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+/* Smooth scroll offset for fixed nav */
+section[id] {
+  scroll-margin-top: 80px;
+}

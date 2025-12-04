@@ -1,77 +1,467 @@
-<div id="welcome-container" class="flex justify-center lg:gap-10 gap-3 px-4 pb-10">
-    <div class="flex flex-col gap-3">
-        <div class="lg:text-4xl text-2xl">
-            Welcome to Tena's Treats
-        </div>
-        <div class="lg:text-lg text-sm">
-            Customized sweet deserts <br>
-            made by Andrea Vukoje
-        </div>
-        <a href="https://instagram.com/tenas.treats" target="_blank">
-            <img class="w-10" src="../../assets/instagramLogo.png" alt="Instagram Logo">
+<!-- Hero Section -->
+<section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+  <!-- Decorative blobs -->
+  <div class="blob blob-pink w-96 h-96 -top-20 -left-20"></div>
+  <div class="blob blob-cream w-80 h-80 top-40 -right-20"></div>
+  <div class="blob blob-pink w-64 h-64 bottom-20 left-1/4"></div>
+
+  <div class="max-w-6xl mx-auto px-4 py-16 flex flex-col lg:flex-row items-center gap-12 relative z-10">
+    <!-- Hero Content -->
+    <div class="flex-1 text-center lg:text-left animate-fade-in-up">
+      <span class="inline-block bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-medium mb-6">
+        Handcrafted with Love
+      </span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-gray-800 mb-6 leading-tight">
+        Welcome to<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-pink-600">Tena's Treats</span>
+      </h1>
+      <p class="text-lg text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
+        Custom cakes, cupcakes, cookies, and sweet treats made with love and creativity.
+        Every creation is uniquely designed just for you.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+        <a href="#contact" class="btn-primary">Order Your Treat</a>
+        <a href="#gallery" class="btn-secondary">View Gallery</a>
+      </div>
+
+      <!-- Social Link -->
+      <div class="mt-8 flex items-center justify-center lg:justify-start gap-3">
+        <a href="https://instagram.com/tenas.treats" target="_blank"
+           class="flex items-center gap-2 text-gray-500 hover:text-pink-500 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+          <span class="font-medium">@tenas.treats</span>
         </a>
-        <div class="lg:text-lg text-sm">
-            Check out my instagram
-            <a href="https://instagram.com/tenas.treats" target="_blank">
-                @tenas.treats
+      </div>
+    </div>
+
+    <!-- Hero Image -->
+    <div class="flex-1 relative">
+      <div class="relative animate-float">
+        <img src="assets/cakes/pinkCakeWhiteStrawberries.jpg"
+             alt="Beautiful Pink Cake"
+             class="w-80 h-80 sm:w-96 sm:h-96 object-cover rounded-3xl shadow-2xl mx-auto">
+        <!-- Decorative elements -->
+        <div class="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-pink-200 to-pink-300 rounded-full -z-10"></div>
+        <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-pink-100 to-pink-200 rounded-full -z-10"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+    </svg>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-24 bg-white relative">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex flex-col lg:flex-row items-center gap-16">
+      <!-- About Image -->
+      <div class="flex-1 relative">
+        <div class="grid grid-cols-2 gap-4">
+          <img src="assets/cakes/jackDaniels.jpg"
+               alt="Jack Daniels Cake"
+               class="rounded-2xl shadow-lg w-full h-48 object-cover">
+          <img src="assets/cookies/elephants.jpg"
+               alt="Elephant Cookies"
+               class="rounded-2xl shadow-lg w-full h-48 object-cover mt-8">
+          <img src="assets/cupcakes/joseCuervoChocolate.jpg"
+               alt="Chocolate Cupcakes"
+               class="rounded-2xl shadow-lg w-full h-48 object-cover -mt-8">
+          <img src="assets/cakepops/pinkWhiteCakePops.jpg"
+               alt="Cake Pops"
+               class="rounded-2xl shadow-lg w-full h-48 object-cover">
+        </div>
+      </div>
+
+      <!-- About Content -->
+      <div class="flex-1 text-center lg:text-left">
+        <span class="inline-block bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-medium mb-4">
+          About Us
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-gray-800 mb-6">
+          Sweet Creations Made with Passion
+        </h2>
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          Hi, I'm Andrea Vukoje, the creator behind Tena's Treats! Every cake, cupcake, and cookie
+          I make is crafted with love, creativity, and attention to detail.
+        </p>
+        <p class="text-gray-600 mb-8 leading-relaxed">
+          Whether you're celebrating a birthday, wedding, baby shower, or any special occasion,
+          I work closely with you to create the perfect custom treat that matches your vision.
+        </p>
+
+        <!-- Features -->
+        <div class="grid grid-cols-2 gap-6">
+          <div class="flex items-start gap-3">
+            <div class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Made with Love</h4>
+              <p class="text-sm text-gray-500">Every treat is handcrafted</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Custom Designs</h4>
+              <p class="text-sm text-gray-500">Tailored to your vision</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Fresh Ingredients</h4>
+              <p class="text-sm text-gray-500">Quality you can taste</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <div class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Timely Delivery</h4>
+              <p class="text-sm text-gray-500">Always on time</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What We Offer Section -->
+<section class="py-24 bg-gradient-to-b from-pink-50 to-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <span class="inline-block bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-medium mb-4">
+        Our Treats
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-gray-800 mb-4">
+        Sweetness in Every Bite
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        From stunning custom cakes to adorable cookies, we create treats that are as beautiful as they are delicious.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Cakes Card -->
+      <div class="card group cursor-pointer">
+        <div class="h-48 overflow-hidden">
+          <img src="assets/cakes/pinkCakeAndStrawberries.jpg"
+               alt="Custom Cakes"
+               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="font-serif text-xl font-semibold text-gray-800 mb-2">Custom Cakes</h3>
+          <p class="text-gray-500 text-sm">Beautiful, personalized cakes for any occasion</p>
+        </div>
+      </div>
+
+      <!-- Cupcakes Card -->
+      <div class="card group cursor-pointer">
+        <div class="h-48 overflow-hidden">
+          <img src="assets/cupcakes/joseCuervoVanilla.jpg"
+               alt="Cupcakes"
+               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="font-serif text-xl font-semibold text-gray-800 mb-2">Cupcakes</h3>
+          <p class="text-gray-500 text-sm">Delightful mini treats packed with flavor</p>
+        </div>
+      </div>
+
+      <!-- Cookies Card -->
+      <div class="card group cursor-pointer">
+        <div class="h-48 overflow-hidden">
+          <img src="assets/cookies/bunnies.jpg"
+               alt="Sugar Cookies"
+               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="font-serif text-xl font-semibold text-gray-800 mb-2">Sugar Cookies</h3>
+          <p class="text-gray-500 text-sm">Adorable decorated cookies for any theme</p>
+        </div>
+      </div>
+
+      <!-- Cake Pops Card -->
+      <div class="card group cursor-pointer">
+        <div class="h-48 overflow-hidden">
+          <img src="assets/cakepops/pinkWhiteCakePops.jpg"
+               alt="Cake Pops"
+               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="font-serif text-xl font-semibold text-gray-800 mb-2">Cake Pops</h3>
+          <p class="text-gray-500 text-sm">Fun, bite-sized treats on a stick</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <span class="inline-block bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-medium mb-4">
+        Gallery
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-gray-800 mb-4">
+        Our Sweet Creations
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Browse through some of our favorite custom creations. Each treat tells a unique story.
+      </p>
+    </div>
+
+    <!-- Responsive Gallery Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+      <!-- Featured large item -->
+      <div class="gallery-item col-span-2 row-span-2">
+        <img src="assets/cakes/pinkCakeWhiteStrawberries.jpg"
+             alt="Pink Cake with White Strawberries"
+             class="w-full h-full object-cover">
+      </div>
+      <div class="gallery-item aspect-square">
+        <img src="assets/cookies/elephants.jpg"
+             alt="Elephant Sugar Cookies"
+             class="w-full h-full object-cover">
+      </div>
+      <div class="gallery-item aspect-square">
+        <img src="assets/cakes/jackDaniels.jpg"
+             alt="Jack Daniels Themed Cake"
+             class="w-full h-full object-cover">
+      </div>
+      <div class="gallery-item aspect-square">
+        <img src="assets/cupcakes/jackDaniels.jpg"
+             alt="Jack Daniels Cupcakes"
+             class="w-full h-full object-cover">
+      </div>
+      <div class="gallery-item aspect-square">
+        <img src="assets/cakes/mrkicBabyShower.jpg"
+             alt="Baby Shower Cake"
+             class="w-full h-full object-cover">
+      </div>
+      <!-- Another featured item -->
+      <div class="gallery-item col-span-2 aspect-video">
+        <img src="assets/cookies/bunnies.jpg"
+             alt="Bunny Sugar Cookies"
+             class="w-full h-full object-cover">
+      </div>
+      <div class="gallery-item aspect-square">
+        <img src="assets/cakes/trailerParkBoys.jpg"
+             alt="Trailer Park Boys Cake"
+             class="w-full h-full object-cover">
+      </div>
+      <div class="gallery-item aspect-square">
+        <img src="assets/cakepops/pinkWhiteCakePops.jpg"
+             alt="Pink and White Cake Pops"
+             class="w-full h-full object-cover">
+      </div>
+      <div class="gallery-item aspect-square">
+        <img src="assets/cakes/pinkCakeAndStrawberries.jpg"
+             alt="Pink Cake with Strawberries"
+             class="w-full h-full object-cover">
+      </div>
+      <div class="gallery-item aspect-square">
+        <img src="assets/cupcakes/joseCuervoChocolate.jpg"
+             alt="Chocolate Cupcakes"
+             class="w-full h-full object-cover">
+      </div>
+      <div class="gallery-item aspect-square">
+        <img src="assets/cheesecakes/strawberryCheesecake.jpg"
+             alt="Strawberry Cheesecake"
+             class="w-full h-full object-cover">
+      </div>
+      <div class="gallery-item aspect-square">
+        <img src="assets/cupcakes/joseCuervoVanilla.jpg"
+             alt="Vanilla Cupcakes"
+             class="w-full h-full object-cover">
+      </div>
+    </div>
+
+    <!-- Instagram CTA -->
+    <div class="text-center mt-12">
+      <p class="text-gray-600 mb-4">Want to see more? Follow us on Instagram!</p>
+      <a href="https://instagram.com/tenas.treats" target="_blank"
+         class="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 text-white px-6 py-3 rounded-full font-medium hover:shadow-lg transition-shadow">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+        </svg>
+        Follow @tenas.treats
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonial/Quote Section -->
+<section class="py-24 bg-gradient-to-r from-pink-100 via-pink-50 to-pink-100">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-pink-300 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+    </svg>
+    <p class="text-2xl sm:text-3xl font-serif text-gray-700 mb-6 leading-relaxed">
+      Every cake tells a story, every treat creates a memory. Let us make your special moments even sweeter.
+    </p>
+    <p class="text-pink-500 font-medium">- Andrea, Tena's Treats</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <span class="inline-block bg-pink-100 text-pink-600 px-4 py-2 rounded-full text-sm font-medium mb-4">
+        Get in Touch
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-gray-800 mb-4">
+        Order Your Custom Treat
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Ready to order? Fill out the form below or reach out on Instagram. I can't wait to create something special for you!
+      </p>
+    </div>
+
+    <div class="flex flex-col lg:flex-row gap-12 items-start">
+      <!-- Contact Form -->
+      <div class="flex-1 w-full">
+        <div class="bg-gradient-to-br from-pink-50 to-white p-8 rounded-3xl shadow-lg">
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div>
+                <label class="form-label">Your Name</label>
+                <input type="text"
+                       [(ngModel)]="name"
+                       [ngModelOptions]="{standalone: true}"
+                       placeholder="Enter your name"
+                       class="form-input">
+              </div>
+              <div>
+                <label class="form-label">Email Address</label>
+                <input type="email"
+                       [(ngModel)]="email"
+                       [ngModelOptions]="{standalone: true}"
+                       placeholder="Enter your email"
+                       class="form-input">
+              </div>
+            </div>
+            <div>
+              <label class="form-label">Phone Number</label>
+              <input type="tel"
+                     [(ngModel)]="number"
+                     [ngModelOptions]="{standalone: true}"
+                     placeholder="Enter your phone number"
+                     class="form-input">
+            </div>
+            <div>
+              <label class="form-label">Tell us about your dream treat</label>
+              <textarea rows="5"
+                        [(ngModel)]="message"
+                        [ngModelOptions]="{standalone: true}"
+                        placeholder="Describe your ideal cake, occasion, theme, flavors, etc."
+                        class="form-input resize-none"></textarea>
+            </div>
+            <a [href]="getEmail()"
+               class="btn-primary w-full text-center block py-4">
+              Send Order Request
             </a>
+          </form>
         </div>
-    </div>
-    <div class="lg:max-w-[250px] max-w-[150px]">
-        <img class="w-screen" src="../../assets/cakes/jackDaniels.jpg" alt="Jack Daniels Cake">
-    </div>
-</div>
+      </div>
 
-<div id="menu-container" class="flex flex-col items-center gap-3 pb-10 px-5">
-    <div id="menu-options" class="flex justify-center gap-3 pb-2">
-        <div class="flex flex-col gap-2 max-w-[375px]">
-            <img class="w-screen" src="../../assets/cakes/pinkCakeWhiteStrawberries.jpg" alt="Pink Cake with White Strawberries">
-            <p class="text-center">Cakes</p>
+      <!-- Contact Info -->
+      <div class="lg:w-96">
+        <div class="bg-gradient-to-br from-pink-400 to-pink-500 p-8 rounded-3xl text-white">
+          <h3 class="font-serif text-2xl font-semibold mb-6">Let's Connect!</h3>
+
+          <div class="space-y-6">
+            <!-- Instagram -->
+            <a href="https://instagram.com/tenas.treats" target="_blank"
+               class="flex items-center gap-4 group">
+              <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="font-medium">Instagram</p>
+                <p class="text-pink-100">@tenas.treats</p>
+              </div>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:tenastreats@gmail.com" class="flex items-center gap-4 group">
+              <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <p class="font-medium">Email</p>
+                <p class="text-pink-100">tenastreats&#64;gmail.com</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-white/20">
+            <p class="text-pink-100 text-sm">
+              Please note: Orders require at least 1 week advance notice.
+              For rush orders, please contact us directly on Instagram.
+            </p>
+          </div>
         </div>
-        <div class="flex flex-col gap-2 max-w-[375px]">
-            <img class="w-screen" src="../../assets/cakepops/pinkWhiteCakePops.jpg" alt="Pink and White Cake Pops">
-            <p class="text-center">Cupcakes</p>
+
+        <!-- Quick Tips -->
+        <div class="mt-6 bg-pink-50 p-6 rounded-2xl">
+          <h4 class="font-semibold text-gray-800 mb-3">When placing your order, include:</h4>
+          <ul class="space-y-2 text-gray-600 text-sm">
+            <li class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Event date and type
+            </li>
+            <li class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Number of servings needed
+            </li>
+            <li class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Preferred flavors
+            </li>
+            <li class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Theme or design inspiration (3-4 reference images)
+            </li>
+          </ul>
         </div>
-        <div class="flex flex-col gap-2 max-w-[375px]">
-            <img class="w-screen" src="../../assets/cookies/elephants.jpg" alt="Elephant Sugar Cookies">
-            <p class="text-center">Cookies</p>
-        </div>
+      </div>
     </div>
-
-    <div>
-        <a routerLink="/menu" class="background bg-pink-300 px-4 py-2 rounded-3xl">SEE MENU</a>
-    </div>
-    
-</div>
-
-
-
-<div id="gallery-container" class="flex flex-col items-center gap-2 pb-10">
-    <div class="text-3xl">
-        Customized to perfection
-    </div>
-
-    <div class="flex lg:flex-row flex-col gap-2 px-4">
-        <div class="flex gap-2 max-w-xl">
-            <div>
-                <img class="w-screen" src="../../assets/cakes/jackDaniels.jpg" alt="Jack Daniels Cake">
-            </div>
-            <div>
-                <img class="w-screen" src="../../assets/cakes/trailerParkBoys.jpg" alt="Trailer Park Boys Cake">
-            </div>
-        </div>
-        <div class="flex gap-2 max-w-xl">
-            <div>
-                <img class="w-screen" src="../../assets/cakes/mrkicBabyShower.jpg" alt="Baby Shower Cake">
-            </div>
-            <div>
-                <img class="w-screen" src="../../assets/cookies/bunnies.jpg" alt="Bunny Sugar Cookies">
-            </div>
-        </div>
-    </div>
-    
-    <a routerLink="/gallery" class="background bg-pink-300 px-4 py-2 rounded-3xl">SEE MORE</a>
-
-
-</div>
-
+  </div>
+</section>

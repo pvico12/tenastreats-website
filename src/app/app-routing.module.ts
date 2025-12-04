@@ -1,9 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { PricingComponent } from './pricing/pricing.component';
-import { OrderComponent } from './order/order.component';
 
 const routes: Routes = [
   {
@@ -11,21 +8,17 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: "gallery",
-    component: GalleryComponent
-  },
-  {
-    path: "menu",
-    component: PricingComponent
-  },
-  {
-    path: "order",
-    component: OrderComponent
-  },
+    path: "**",
+    redirectTo: ""
+  }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'enabled',
+    anchorScrolling: 'enabled',
+    scrollOffset: [0, 80]
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
